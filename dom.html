@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>JavaScript Form Validation Using DOM</title>
+
+    <script>
+
+        function validateForm() {
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var age = document.getElementById("age").value;
+
+            if (name == "" || email == "") {
+                alert("All fields must be filled out.");
+                return false;
+            }
+
+           if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+            alert("Please enter a valid email address!");
+            return false;
+           }
+
+           if (phone.length !=11){
+            alert("Phone number must be 11 digits long");
+            return false;
+           }
+
+           if (age<18){
+            alert("Age must be 18 or older");
+            return false;
+           }
+
+            alert("Form submitted successfully!");
+            return true;
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <form name="myForm"
+          onsubmit="return validateForm()">
+
+        Name:
+        <input type="text"
+               id="name"
+               name="name">
+        <br><br>
+
+        Email:
+        <input type="text"
+               id="email"
+               name="email">
+        <br><br>
+
+        Phone:
+        <input type="text"
+                id="phone"
+                name="phone">
+        <br><br>
+
+        Age:
+        <input type="text"
+                id="age"
+                name="age">
+        <br><br>
+
+
+        <input type="submit"
+               value="Submit">
+
+    </form>
+
+</body>
+
+</html>
