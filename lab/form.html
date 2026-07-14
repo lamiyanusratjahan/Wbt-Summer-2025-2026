@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Nusrat Jahan Lamiya</title>
+</head>
+
+<body>
+
+  <nav>
+    <a href="../index.html">Home</a> |
+    <a href="education.html">Education</a> |
+    <a href="experience.html">Experience</a> |
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <hr>
+
+  <!-- ===== Top Info ===== -->
+  <div>
+    <p>* - Denotes Required Information</p>
+    <p><b>&gt; 1 Donation</b> &nbsp;&nbsp; &gt; 2 Confirmation &nbsp;&nbsp; &gt; Thank You!</p>
+  </div>
+
+  <form action="#" method="post">
+
+    <!-- ===== Headline 1 ===== -->
+    <div>
+      <h2>Donor Information</h2>
+    </div>
+
+    <table cellpadding="6" cellspacing="0">
+      <tr>
+        <td><label for="firstName">First Name*:</label></td>
+        <td><input type="text" id="firstName" name="firstName" required></td>
+      </tr>
+      <tr>
+        <td><label for="lastName">Last Name*:</label></td>
+        <td><input type="text" id="lastName" name="lastName" required></td>
+      </tr>
+      <tr>
+        <td><label for="company">Company:</label></td>
+        <td><input type="text" id="company" name="company"></td>
+      </tr>
+      <tr>
+        <td><label for="address1">Address 1*:</label></td>
+        <td><input type="text" id="address1" name="address1" required></td>
+      </tr>
+      <tr>
+        <td><label for="address2">Address 2:</label></td>
+        <td><input type="text" id="address2" name="address2"></td>
+      </tr>
+      <tr>
+        <td><label for="city">City*:</label></td>
+        <td><input type="text" id="city" name="city" required></td>
+      </tr>
+      <tr>
+        <td><label for="state">State*:</label></td>
+        <td>
+          <select id="state" name="state" required>
+            <option value="">Select a State</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Cumilla">Cumilla</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="zipCode">Zip Code*:</label></td>
+        <td><input type="text" id="zipCode" name="zipCode" required></td>
+      </tr>
+      <tr>
+        <td><label for="country">Country*:</label></td>
+        <td>
+          <select id="country" name="country" required>
+            <option value="">Select a Country</option>
+            <option value="BD">Bangladesh</option>
+            <option value="US">United States</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone:</label></td>
+        <td><input type="tel" id="phone" name="phone"></td>
+      </tr>
+      <tr>
+        <td><label for="fax">Fax:</label></td>
+        <td><input type="text" id="fax" name="fax"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email*:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label>Donation Amount*:</label></td>
+        <td>
+          <label><input type="radio" name="amount" value="none" checked> None</label>
+          <label><input type="radio" name="amount" value="50"> $50</label>
+          <label><input type="radio" name="amount" value="75"> $75</label>
+          <label><input type="radio" name="amount" value="100"> $100</label>
+          <label><input type="radio" name="amount" value="250"> $250</label>
+          <label><input type="radio" name="amount" value="other"> Other</label>
+          <br>
+          <label for="otherAmount">Other Amount: $</label>
+          <input type="text" id="otherAmount" name="otherAmount">
+        </td>
+      </tr>
+      <tr>
+        <td><label>Recurring Donation:</label></td>
+        <td>
+          <label><input type="checkbox" name="recurring" value="yes"> I am interested in giving on a regular basis.</label>
+          <br>
+          <label>Monthly Credit Card $ <input type="text" name="monthlyAmount"> For <input type="text" name="monthlyDuration"> Months</label>
+        </td>
+      </tr>
+    </table>
+
+    <br>
+
+    <!-- ===== Headline 2 ===== -->
+    <div>
+      <h2>Honorarium and Memorial Donation Information</h2>
+    </div>
+
+    <table cellpadding="6" cellspacing="0">
+      <tr>
+        <td><label>I would like to make this donation:</label></td>
+        <td>
+          <label><input type="radio" name="donationType" value="honor"> To Honor</label>
+          <label><input type="radio" name="donationType" value="memory"> In Memory of</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="honoreeName">Name:</label></td>
+        <td><input type="text" id="honoreeName" name="honoreeName"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><b>Acknowledge Donation to:</b></td>
+      </tr>
+      <tr>
+        <td><label for="ackAddress">Address:</label></td>
+        <td><input type="text" id="ackAddress" name="ackAddress"></td>
+      </tr>
+      <tr>
+        <td><label for="ackCity">City:</label></td>
+        <td><input type="text" id="ackCity" name="ackCity"></td>
+      </tr>
+      <tr>
+        <td><label for="ackState">State:</label></td>
+        <td>
+          <select id="ackState" name="ackState">
+            <option value="">Select a State</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="ackZip">Zip:</label></td>
+        <td><input type="text" id="ackZip" name="ackZip"></td>
+      </tr>
+    </table>
+
+    <br>
+
+    <!-- ===== Headline 3 ===== -->
+    <div>
+      <h2>Additional Information</h2>
+    </div>
+
+    <p>Please enter your name, company or organization as you would like it to appear in our publications:</p>
+
+    <table cellpadding="6" cellspacing="0">
+      <tr>
+        <td><label for="pubName">Name:</label></td>
+        <td><input type="text" id="pubName" name="pubName"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <label><input type="checkbox" name="anonymous" value="yes"> I would like my gift to remain anonymous.</label><br>
+          <label><input type="checkbox" name="matchingGift" value="yes"> My employer offers a matching gift program. I will mail the matching gift form.</label><br>
+          <label><input type="checkbox" name="noThankYou" value="yes"> Please save the cost of acknowledging this gift by not mailing a thank you letter.</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="comments">Comments<br>
+            <span>(Please type any questions or feedback here)</span>
+          </label>
+        </td>
+        <td><textarea id="comments" name="comments" rows="5" cols="40"></textarea></td>
+      </tr>
+      <tr>
+        <td><label>How may we contact you?</label></td>
+        <td>
+          <label><input type="checkbox" name="contact" value="email"> E-mail</label><br>
+          <label><input type="checkbox" name="contact" value="postal"> Postal Mail</label><br>
+          <label><input type="checkbox" name="contact" value="telephone"> Telephone</label><br>
+          <label><input type="checkbox" name="contact" value="fax"> Fax</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label>I would like to receive newsletters and information about special events by:</label></td>
+        <td>
+          <label><input type="checkbox" name="newsletter" value="email"> E-mail</label><br>
+          <label><input type="checkbox" name="newsletter" value="postal"> Postal Mail</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label><input type="checkbox" name="volunteer" value="yes"> I would like information about volunteering with the organization.</label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button type="reset">Reset</button>
+          <button type="submit">Continue</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <hr>
+
+  <div>
+    <p>Donate online with confidence. You are on a secure server.</p>
+    <p>If you have any problems or questions, please contact support.</p>
+  </div>
+
+  <footer>
+    <p><small>&copy; 2026 Nusrat Jahan Lamiya</small></p>
+  </footer>
+
+</body>
+
+</html>
